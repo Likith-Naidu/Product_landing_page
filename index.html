@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+           @media only screen and (max-width: 768px) {
+          /* For mobile phones: */
+          [class*="col-"] {
+            width: 100%;
+          }
+        }
+        .flex-container {display: inline-flex;}
+    </style>
+    <title>Product landing page</title>
+</head>
+<body>
+    <header id="header"> 
+       <center><img src="https://seeklogo.com/images/A/Air_Jordan-logo-D9CFFCC9D4-seeklogo.com.png" alt="jordan logo" id="header-img"></center> 
+        <nav id="nav-bar">           
+            <a href="#Learn-more" class="nav-link">Learn more</a>
+           <a href="#get-notified" class="nav-link">Get in touch</a>
+           <a href="#Available stock" class="nav-link">Available stock</a> 
+        </nav>
+    </header>
+    <div id="Learn-more">    
+             <h2>Watch this video to learn all about jordan and its history.</h2>
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/n-f8udP21Jg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+    </div>
+    <div id="get-notified">  
+        <h3> To get notified about our stock arrival.please submit your email address</h3>
+        <p><b>for more details contact jordanstore23@gmail.com.</b></p>
+        <p><b>visit our store:</b></p>
+        <p>jordan store<br>jordan city<br>jordan state <br>jordan country <br>zipcode:232323</p>
+
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+
+            <input type="submit" id="submit">
+        </form>   
+    </div>
+
+    <div id="Available stock">  
+
+        <div class="flex-container">
+
+            <div class="c1">
+                <p class="In-stock"><b>Instock</b></p>
+                Nike Men's Jordan Max <br>Aura 3 Sneaker <br>
+                <img src="images/jordan1.jpg" alt="Nike Men's Jordan Max Aura 3 Sneaker" id="image">
+                <button type="button" id="Customize">Customize</button><br>
+                <button type="button" id="Get-quote">Get quote</button>               
+            </div>
+
+            <div class="c2">
+                <p class="In-stock"><b>Instock</b></p>
+                Nike Air Jordan Sneakers University Blue<br>
+                <img src="images/jordan2.jpg" alt="Nike Air Jordan Sneakers University Blue" id="image"><br>
+                <button type="button" id="Customize">Customize</button><br>
+                <button type="button" id="Get-quote">Get quote</button>
+                  </div>
+                
+            <div class="c3">
+                <p class="Out-of-stock"><b>Out of stock</b></p>
+                Jordan Air<br> NFH<br>
+                <img src="images/jordan3.jfif" alt="  Jordan Air NFH" id="image">
+                <button type="button" id="Customize">Customize</button><br>
+                <button type="button" id="Get-quote">Get quote</button>
+            </div>
+
+          </div>  
+
+    </div>
+    
+</body>
+   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> 
+</html>
